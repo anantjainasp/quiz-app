@@ -1,17 +1,19 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     background-color: #ADD8E6;
 }
-h1{
+
+h1 {
     font-size: 100px;
-    margin-top: 5px;
+    margin: 5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#quiz-container{
+
+#quiz-container {
     max-width: 600px;
     margin: auto;
     padding: 20px;
@@ -20,43 +22,51 @@ h1{
     background-color: #3498db;
     color: white;
 }
-#question-container{
+
+#question-container {
     font-size: 30px;
     margin-bottom: 20px;
 }
-button{
+
+button {
     padding: 15px;
     cursor: pointer;
     border: none;
-    border-radius: 8px ;
+    border-radius: 8px;
     font-size: 30px;
 }
-#next-btn,#submit-btn{
+
+#next-btn,
+#submit-btn {
     display: block;
     margin: 15px auto;
 }
 
-#next-btn{
+#next-btn {
     background-color: #2ecc71;
     color: white;
 }
 
-#submit-btn{
+#submit-btn {
     background-color: #e74c3c;
     color: white;
 }
-#next-btn:hover{
+
+#next-btn:hover {
     background-color: #27ae60;
 }
-#submit-btn:hover{
+
+#submit-btn:hover {
     background-color: #c0392b;
 }
-.quiz-card{
+
+.quiz-card {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.option-label{
+
+.option-label {
     box-sizing: border-box;
     width: 50px;
     height: 50px;
@@ -69,7 +79,8 @@ button{
     border-radius: 50%;
     margin-right: 10px;
 }
-.quiz-option{
+
+.quiz-option {
     box-sizing: border-box;
     flex: 1;
     padding: 15px;
@@ -82,6 +93,31 @@ button{
     font-size: 25px;
     width: calc(100%-60px);
 }
-.quiz-option:hover{
+
+.quiz-option:hover {
     background-color: #2980b9;
+}
+
+.quiz-option.selected {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+#score-container {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #000;
+}
+
+#timer {
+    font-size: 50px;
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
 }
